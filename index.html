@@ -3,39 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel Ellison's Portfolio</title>
+    <title>Samuel Ellison's Personal Site</title>
+    <style>
+        .top-container{
+            background-color: #13B3F2;
+            position: relative;
+            padding-top: 100px;
+            height: 1000px;
+        }
+        body{
+            font-family: "Merriweather", serif;
+            text-align: center;
+        }
+        .title-text{
+            color: #1A3140;
+            display: block;
+            font-size: 1em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+        .overlay-text {
+            position: absolute;
+            top: 65%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            color: #13B3F2;
+            padding: 10px 20px; 
+            font-size: 20px; 
+            text-align: center;
+        }
+        .overlay-text > p{
+            color: white;
+        }
+        .pro{
+            text-decoration: underline;
+            text-decoration-color: initial;
+        }
+        .top-cloud, .bottom-cloud, .sam-space-ship {
+            position: absolute;
+            width: 150px; /* Adjust this value to the desired size */
+        }
+
+        hr{
+            border: dotted #13B3F2 6px;
+            border-bottom: none;
+            width: 4%;
+            margin: 200px auto;
+            position: relative;
+        }
+        h2{
+            color: #13B3F2;
+            font-family: "Montserrat", sans-serif;
+            font-size: 2.5rem;
+            font-weight: normal;
+            padding-bottom: 10px;
+        }
+        /* Add this class */
+        .uniform-img {
+            width: 150px; /* Set a consistent width */
+            height: 150px; /* Set a consistent height */
+            object-fit: cover; /* Ensure images maintain their aspect ratio */
+        }
+        div.parent{
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+            grid-template-rows: repeat(1, 1fr);
+            width: 50%;
+            margin: 100px auto 0 auto;
+            text-align: left;
+            row-gap: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Samuel Ellison's Portfolio</h1>
-    <h2>Im a Web Developer</h2>
-    <hr/>
-    <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-    <img src="./assets/Sams Bday Project Snip.png" alt="">
-    <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-    <img src="./assets/Movie Ranking Project Snip.png" alt="">
-    <h3><a href="./public/motivation.html">Motivational Poster</a></h3>
-    <img src="./assets/motivational-poster.png" alt="">
-    <h3><a href="./public/flag-of-laos.html">Flag of Laos CSS</a></h3>
-    <img src="./assets/flag-of-laos.png" alt="">
-    <hr />
-    <a href="./public/about.html">About Me</a>
-    <hr />
-    <a href="./public/contact.html">Contact Me</a>
+    <div class="top-container">
+        <img class="top-cloud" src="./cloud.png" alt="cloud">
+        <div class="title-text">
+          <h1>I'm Samuel.</h1>
+          <h2>a <span class="pro">pro</span>grammer.</h2>
+        </div>
+        <img class="bottom-cloud" src="./cloud.png" alt="cloud">
+        <img class="sam-space-ship" src="./Sam Spaceship alpha.png" alt="sam space ship">
+        <div class="overlay-text">
+            <h1>Hello!</h1>
+            <p>I am an Information Technology expert, ready to put his experience to the test by creating or maintaining interesting projects anywhere from websites to virtual reality simulators.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="skills">
+        <h2>My Skills</h2>
+        <div class="parent">
+          <div id="vr-lab">
+            <img class="uniform-img" src="./VR-radiology-screencap.png" alt="VR radiology screencap">
+          </div>
+          <div class="coding">
+            <h3>Design &amp; Development</h3>
+            <p>I started learning to code in high school and have developed that skill through college. I have developed video games, web apps, virtual reality radiology labs and games, and many other various small scale projects</p>
+          </div>
+          <div class="chillies">
+            <img class="chilli-img uniform-img" src="./vegan-champ.jpg" alt="Sam winning 3rd place in a chilli contest">
+          </div>
+          <div class="hot-wings">
+            <h3>Expert Vegan Cook</h3>
+            <p>Won third place in a normal chilli contest with VEGAN CHILLI. Also make a mean vegan cajun fried tofu pasta</p>
+          </div>
+        </div>
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>If you love hot wings as much as I do.</h3>
+          <p class="contact-message">Love hot wings as much as I do? Let's talk about how awesome they are! We can code while we eat hot wings!</p>
+          <a class="btn" href="mailto:ilove@hotwings.com">CONTACT ME</a>
+        </div>
+      </div>
 </body>
 </html>
-
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
